@@ -61,6 +61,18 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+ansi-cyan@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/ansi-cyan/-/ansi-cyan-0.1.1.tgz#538ae528af8982f28ae30d86f2f17456d2609873"
+  dependencies:
+    ansi-wrap "0.1.0"
+
+ansi-red@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/ansi-red/-/ansi-red-0.1.1.tgz#8c638f9d1080800a353c9c28c8a81ca4705d946c"
+  dependencies:
+    ansi-wrap "0.1.0"
+
 ansi-regex@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.0.0.tgz#c5061b6e0ef8a81775e50f5d66151bf6bf371107"
@@ -68,6 +80,10 @@ ansi-regex@^2.0.0:
 ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
+
+ansi-wrap@0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ansi-wrap/-/ansi-wrap-0.1.0.tgz#a82250ddb0015e9a27ca82e82ea603bbfa45efaf"
 
 anymatch@^1.3.0:
   version "1.3.0"
@@ -97,6 +113,13 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+arr-diff@^1.0.1:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-1.1.0.tgz#687c32758163588fef7de7b36fabe495eb1a399a"
+  dependencies:
+    arr-flatten "^1.0.1"
+    array-slice "^0.2.3"
+
 arr-diff@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/arr-diff/-/arr-diff-2.0.0.tgz#8f3b827f955a8bd669697e4a4256ac3ceae356cf"
@@ -106,6 +129,10 @@ arr-diff@^2.0.0:
 arr-flatten@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arr-flatten/-/arr-flatten-1.0.1.tgz#e5ffe54d45e19f32f216e91eb99c8ce892bb604b"
+
+arr-union@^2.0.1:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/arr-union/-/arr-union-2.1.0.tgz#20f9eab5ec70f5c7d215b1077b1c39161d292c7d"
 
 array-differ@^1.0.0:
   version "1.0.0"
@@ -1094,11 +1121,11 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
-decomment@^0.8.6:
-  version "0.8.7"
-  resolved "https://registry.yarnpkg.com/decomment/-/decomment-0.8.7.tgz#248f2116f6ce3a8e8dd1b63e5b35aba5ca054ca5"
+decomment@^0.9.0:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/decomment/-/decomment-0.9.1.tgz#5bd96c67edc44df71115cfd83712ff04fa6cd0c9"
   dependencies:
-    esprima "3.1"
+    esprima "~4.0.0"
 
 deep-extend@^0.4.1, deep-extend@~0.4.0:
   version "0.4.1"
@@ -1317,9 +1344,9 @@ esprima@2.7.x, esprima@^2.6.0, esprima@^2.7.1:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-2.7.3.tgz#96e3b70d5779f6ad49cd032673d1c312767ba581"
 
-esprima@3.1:
-  version "3.1.3"
-  resolved "https://registry.yarnpkg.com/esprima/-/esprima-3.1.3.tgz#fdca51cee6133895e3c88d535ce49dbff62a4633"
+esprima@~4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.0.tgz#4499eddcd1110e0b218bacf2fa7f7f59f55ca804"
 
 estraverse@^1.9.1:
   version "1.9.3"
@@ -1375,6 +1402,12 @@ expand-tilde@^1.2.1, expand-tilde@^1.2.2:
   resolved "https://registry.yarnpkg.com/expand-tilde/-/expand-tilde-1.2.2.tgz#0b81eba897e5a3d31d1c3d102f8f01441e559449"
   dependencies:
     os-homedir "^1.0.1"
+
+extend-shallow@^1.1.2:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/extend-shallow/-/extend-shallow-1.1.4.tgz#19d6bf94dfc09d76ba711f39b872d21ff4dd9071"
+  dependencies:
+    kind-of "^1.1.0"
 
 extend@^3.0.0, extend@~3.0.0:
   version "3.0.0"
@@ -1839,13 +1872,13 @@ gulp-sourcemaps@^2.4.0:
     through2 "2.X"
     vinyl "1.X"
 
-gulp-strip-comments@^2.4.3:
-  version "2.4.3"
-  resolved "https://registry.yarnpkg.com/gulp-strip-comments/-/gulp-strip-comments-2.4.3.tgz#e219b7c7beac1aba6c36e0aff1db7c5ae2c1c1b0"
+gulp-strip-comments@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/gulp-strip-comments/-/gulp-strip-comments-2.5.2.tgz#d97e1d8b0be205600b1a2923d4f8b6b558bfbfc6"
   dependencies:
-    decomment "^0.8.6"
-    gulp-util "3.0.7"
-    through2 "^2.0.1"
+    decomment "^0.9.0"
+    plugin-error "^0.1.2"
+    through2 "^2.0.3"
 
 gulp-strip-css-comments@^1.2.0:
   version "1.2.0"
@@ -1892,7 +1925,7 @@ gulp-uglifycss@^1.0.6:
     through2 "~2.0.1"
     uglifycss "~0.0.20"
 
-gulp-util@3.0.7, gulp-util@^3.0.0, gulp-util@^3.0.3, gulp-util@^3.0.7, gulp-util@~3.0.7:
+gulp-util@^3.0.0, gulp-util@^3.0.3, gulp-util@^3.0.7, gulp-util@~3.0.7:
   version "3.0.7"
   resolved "https://registry.yarnpkg.com/gulp-util/-/gulp-util-3.0.7.tgz#78925c4b8f8b49005ac01a011c557e6218941cbb"
   dependencies:
@@ -2506,6 +2539,10 @@ karma@^1.3.0:
 kew@~0.7.0:
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/kew/-/kew-0.7.0.tgz#79d93d2d33363d6fdd2970b335d9141ad591d79b"
+
+kind-of@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/kind-of/-/kind-of-1.1.0.tgz#140a3d2d41a36d2efcfa9377b62c24f8495a5c44"
 
 kind-of@^3.0.2:
   version "3.1.0"
@@ -3237,6 +3274,16 @@ pipetteur@^2.0.0:
   dependencies:
     onecolor "^3.0.4"
     synesthesia "^1.0.1"
+
+plugin-error@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/plugin-error/-/plugin-error-0.1.2.tgz#3b9bb3335ccf00f425e07437e19276967da47ace"
+  dependencies:
+    ansi-cyan "^0.1.1"
+    ansi-red "^0.1.1"
+    arr-diff "^1.0.1"
+    arr-union "^2.0.1"
+    extend-shallow "^1.1.2"
 
 plur@^2.0.0, plur@^2.1.0, plur@^2.1.2:
   version "2.1.2"
